@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* ----------------------------------------------------
+
+★全体共通css
+-------------------------------------------------------
+
+build:2014-11
+lastupdate:2015-12
+version:1.1
+author:kh
+
+-------------------------------------------------------
+
+★目次
+01.reset
+02.font
+03.linkcolor
+
+---------------------------------------------------- */
+
+/* ■01.reset
+--------------------------------------------------- */
+body,
+div,p,
+dl,dt,dd,ul,ol,li,
+h1,h2,h3,h4,h5,h6,
+pre,code,
+form,fieldset,legend,input,textarea,blockquote,
+th,td,figure,figcaption
+{
+    margin:0;
+    padding:0;
+    -webkit-text-size-adjust: none;
+    letter-spacing: 0.06em;
+}
+
+/*　■動作を滑らかにする場合の記述
+-webkit-transition-duration: 0.5s;
+-moz-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;
+transition-duration: 0.5s;
+*/
+
+h1,h2,h3,h4,h5,h6{ font-weight:inherit; /*line-height:100%;*/ }
+li{ list-style:none; }
+table{ border-collapse: collapse; border-spacing: 0; }
+
+fieldset,img { border: 0; vertical-align: bottom; }
+/*img{ width:100%; display: block;}*/
+
+
+/*body,html{ overflow-x: hidden; }*/
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Bold");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: local("Helvetica Neue Regular");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: local("Helvetica Neue Regular");
+  font-weight: 200;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;
+    line-height: 1.7;
+    color: #000;
+	background-color:#fff;
+    /*font-weight: 400;*/
+    font-size: 14px;
+}
+/*@media all and (-ms-high-contrast: none) {
+  body {
+    font-family: Verdana, Meiryo, sans-serif;
+  }
+}*/
+/* ■02.横幅1300px以上（PC用）スクロールバー対策で+20pxを指定する
+--------------------------------------------------- */
+@media screen and (min-width:1320px) {
+/* ▼PC用================================================================== */
+
+/* ▲PC用================================================================== */
+}
+
+
+/* ■03.横幅768px以上、1299px以下（Tab用）スクロールバー対策で+20pxを指定する
+--------------------------------------------------- */
+@media screen and (min-width:768px) and (max-width:1319px) {
+/* ▼Tab用================================================================= */
+
+/* ▲Tab用================================================================= */
+}
+
+
+/* ■04.横幅480px以上、767px以下（SP横用）
+--------------------------------------------------- */
+@media screen and (min-width:480px) and (max-width:767px) {
+/* ▼SP横用================================================================ */
+
+/* ▲SP横用================================================================ */
+}
+
+
+/* ■05.横幅479px以下（SP縦用）
+--------------------------------------------------- */
+@media screen and (min-width:0px) and (max-width:479px) {
+/* ▼SP縦用用================================================================ */
+
+/* ▲SP縦用用================================================================ */
+}
+
+/* ■03.link
+--------------------------------------------------- */
+a:link{text-decoration: none;}
+/* ■フェードイン表示
+--------------------------------------------------- */
+/* 画面外にいる状態 */
+/* 画面外にいる状態 */
+.fadein {
+    opacity : 0.1;
+    transform : translate(0, 80px);
+    transition : all 800ms;
+    }
+
+/* 画面内に入った状態 */
+.fadein.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+    animation-delay: 0.8s;
+    animation-duration:2s;
+    }
+
+
+h1{
+  color: #2bbf13;
+}
